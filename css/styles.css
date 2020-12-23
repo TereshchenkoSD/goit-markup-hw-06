@@ -340,7 +340,7 @@ address {
 }
 
 .modal-title {
-  display: inline-block;
+  display: block;
   margin-bottom: 12px;
 
   text-align: center;
@@ -365,6 +365,16 @@ address {
   line-height: 1.171;
   letter-spacing: 0.01em;
 
+  color: var(--secondary-text-color);
+}
+
+.modal-form-textarea {
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.171;
+  letter-spacing: 0.01em;
   color: var(--secondary-text-color);
 }
 
@@ -416,6 +426,7 @@ address {
   padding-bottom: 12px;
   padding-top: 12px;
   margin-top: 4px;
+  margin-bottom: 20px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -432,7 +443,7 @@ address {
 
 .modal-form-policy:checked + .modal-form-policy-text::before {
   background-color: var(--accent-color);
-  background-image: url('../icons/icon\ check\ \(1\).svg');
+  background-image: url('../icons/check.svg');
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
@@ -445,6 +456,7 @@ address {
 .modal-form-policy-text {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 
   font-weight: 400;
